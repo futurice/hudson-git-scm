@@ -15,4 +15,3 @@ What it does not do:
  - Polling / triggers
  - Fancy error handling in case incorrect branch or tag names are
    specified
-
