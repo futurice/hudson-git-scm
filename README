@@ -1,0 +1,18 @@
+gitScm.sh is a replacement for the Hudson Git SCM plugin which works
+unreliably and failed to checkout git-flow style branches such as
+feature/foo or hotfix/bar.
+
+NOTE: A newer Git Plugin might work properly, but the version (1.1.6)
+available to our existing Hudson installation is not sufficient.
+
+
+What it does:
+ - Checks out the latest source from the given branch
+ - Alternatively checks out a given tag
+ - Avoids unneccessary cloning
+
+What it does not do:
+ - Polling / triggers
+ - Fancy error handling in case incorrect branch or tag names are
+   specified
+
