@@ -28,7 +28,8 @@ then
     # local branch
     git checkout $branch
 else
-    # remote branch
+    # remote branch, need to pull to make sure it is known
+    git pull
     git checkout -b $branch origin/$branch
 fi
 
